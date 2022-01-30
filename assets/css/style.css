@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+.w-100{
+	width:100%;
+}
+
+.txtseo {
+	width:100%;
+	height: auto;/*auto*/
+	background-color: #FFFFFF;
+	padding: 30px 150px;
+	text-align: center;
+}
+
+.txtseo h1 {
+	color: #0099FF;
+	margin-top: 0px;
+}
+.txtseo p {margin-bottom: 0px}
+
+
+.bold{
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.italic{
+	font-style: italic;
+}
+
+.font-big{
+	font-size: 25px;
+}
+
+.font-small{
+	font-size: 10px;
+}
+
+.line-spacing{
+	line-height: 24px;
+}
+
+.white{
+	color: #fff;
+}
+
+.blue{
+	color: #0099ff;
+}
+
+.mymenu{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	
+	display: flex;
+	justify-content: flex-end;
+}
+
+.mymenu li {
+	margin-left: 2px;
+}
+
+.mymenu li a {
+	color: #000;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.mymenu li a:hover{
+	color: #CDCDCD;
+	background-color: #212121;
+}
+
+
+.text-seo {
+	padding: 15px 15px;
+	text-align: center;
+}
+
+.title-item {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.title-item span
+{
+	border-bottom: solid 2px #0099FF;
+	padding-bottom: 14px;
+}
+
+
+.frameImg{
+	position: relative;
+}
+
+.frameImg h3{
+	position: absolute;
+	bottom: 0px;
+	color: #d1d1d1;
+	font-size: 24px;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	padding: 10px;
+}
+
+.frameDesc{
+	padding: 10px;
+}
+
+.footermenu{
+	margin: 0px;
+	padding: 10px 0px;
+	list-style-type: none;
+}
+
+.footermenu li{
+	margin-left:2px;
+}
+
+.footermenu li a{
+	color:#E1E1E1;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+/* Perintah yang dijalankan saat mouse ada di atas link/a */
+.footermenu li a:hover{
+	color:#212121;
+	background-color: #CDCDCD;
+}
+
+@media(min-width:992px)
+{
+	.text-seo{
+		padding: 30px 200px;
+	}
+}
