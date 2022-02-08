@@ -9,12 +9,12 @@
 	width:100%;
 	height: auto;/*auto*/
 	background-color: #FFFFFF;
-	padding: 30px 150px;
+	padding: 30px 30px;
 	text-align: center;
 }
 
 .txtseo h1 {
-	color: #0099FF;
+	color: #42d1f5;
 	margin-top: 0px;
 }
 .txtseo p {margin-bottom: 0px}
@@ -49,7 +49,7 @@
 }
 
 .blue{
-	color: #0099ff;
+	background-color: #42d1f5;
 }
 
 .mymenu{
@@ -73,8 +73,14 @@
 }
 
 .mymenu li a:hover{
-	color: #CDCDCD;
+	color: #81dff7;
 	background-color: #212121;
+}
+
+/* Perintah yang dijalankan saat mouse ada di atas link/a */
+.mymenu li a:hover, .mymenu li a.active{
+	color:#212121;
+	background-color: #81dff7;
 }
 
 
@@ -91,7 +97,7 @@
 
 .title-item span
 {
-	border-bottom: solid 2px #0099FF;
+	border-bottom: solid 2px #42d1f5;
 	padding-bottom: 14px;
 }
 
@@ -134,12 +140,12 @@
 /* Perintah yang dijalankan saat mouse ada di atas link/a */
 .footermenu li a:hover{
 	color:#212121;
-	background-color: #CDCDCD;
+	background-color: #81dff7;
 }
 
 @media(min-width:992px)
 {
-	.text-seo{
-		padding: 30px 200px;
+	.txtseo {
+	padding: 30px 150px;
 	}
 }
