@@ -136,6 +136,15 @@ body{
 	padding: 10px;
 }
 
+.info-quote{
+	position: absolute;
+	left:30%;
+	top:15%;
+	text-align: center;
+	background-color: rgba(255,255,255,0.8);
+	padding: 30px 50px;
+}
+
 .footer{
 	background-color:#42d1f5;
 	text-align: center;
