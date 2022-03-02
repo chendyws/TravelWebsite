@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/fontawesome-free-6.0.0-beta3-web/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	
 </head>
 
 <body>
@@ -18,10 +20,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 logo">
-					<img src="assets/images/logo.png" alt="tourphoto" class="w-100">
+					<img src="assets/images/logo.png" alt="tourphoto" class="w-50">
 				</div>
 				<div class="col-md-10">
-					<ul class="mymenu blue">
+					<ul class="mymenu">
 							<li><a href="index.html" class="active">Home</a></li>
 							<li><a href="packages.html">Packages</a></li>
 							<li><a href="activities.html">Activities</a></li>
@@ -40,27 +42,28 @@
 	</svg>
 
 		<!--- Company Description --->
-		<div class="container-fluid">
+		<div class="container-fluid mbtm">
 			<div class="row">
 				<div class="col-12 bg-white position-relative">
 					<div class="txtseo">
 						<h1>SUARES BALI HOLIDAYS</h1>
-						<p>Suares Bali Holidays provides best selections of Bali Day Tour & Beyond Packages for a joyful holiday experience in Bali, our professional staff, driver and tour guide will lead your trip to explore the beauty of Bali and see closely the uniqueness of our Balinese culture and social tradition. Our team committing to provide high standard services to meet our customers need. Customers’ satisfaction is our priority and we always make your holiday experience a memory that you will never forget.
+						<p>Suares Bali Holidays is a travel or tourism agency that was founded in 2000. We are providing the best selections of Bali Day Tour & Beyond Packages for a joyful holiday experience in Bali, our professional staffs, drivers and tour guides will lead your trip to explore the beauty of Bali and see closely the uniqueness of our Balinese culture and social tradition. Our team committing to provide high standard services and supported by the experiences that we have in travel agency services to meet our customers need. Customer's satisfaction is our priority and we always make your holiday experience a memory that you will never forget in life.
 						</p>
+						<br>
 					</div>
 				</div>
 			</div>
 		</div>
 	
-		<div class="container">
+		<div class="container ">
 			<div class="row">
 				<div class="col-12 p-0">
-					
+
 					<!--- Slider --->
 					<div id="carouselExampleControls" class="carousel slide mb-3" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img class="d-block w-100" src="assets/images/imageheader.jpg" alt="First slide">
+								<img class="d-block w-100" src="assets/images/header.jpg" alt="First slide">
 							</div>
 							<div class="carousel-item">
 								<img class="d-block w-100" src="assets/images/dinnerjimbaran.jpg" alt="Second slide">
@@ -83,9 +86,10 @@
 		</div>
 			
 			<!--- Package Tours --->
-			<div class="container mb-3">
+			<div class="container mbtm">
 				<div class="row">
 					<div class="col-12 text-center">
+						<br>
 						<h2 class="title-item"><span>PACKAGE TOURS</span></h2>
 						<p>Bali Full Day Package Tours is an Bali One Day Tours Experience to See Bali Islands With Unique Cultures and Beautiful Places of Interest, enjoy the tours around 10 to 11 hours during your holiday. Enjoy Bali full day tour packages with our professional Bali Tours Driver are friendly guiding you to visit the beautiful panorama of tourist sites and other tourist destinations by performing their outstanding service together for your convenience and enjoyable during full one day tours. </p>
 					</div>
@@ -173,9 +177,10 @@
 			</div>
 
 			<!---Adventages-->
-			<div class="container mb-3">
+			<div class="container mbtm">
 				<div class="row">
 					<div class="col-12 w-100 blue text-center"> 
+
 						<h2 class="title-item"><span a>THE ADVANTAGES OF CHOOSING US</span></h2>
 						<p>Before you go on vacation, make sure you set and plan your holiday properly and make your travel memoriable. Suares Bali Holidays invite you to choice us and Have a wonderful Holiday in Bali. Herewith the advantages of choosing us</p>
 					</div>
@@ -201,7 +206,7 @@
 			</div>
 
 			<!--- Activities --->
-			<div class="container mb-5">
+			<div class="container mbtm">
 				<div class="row">
 					<div class="col-12 text-center">
 						<h2 class="title-item"><span>ACTIVITIES</span></h2>
@@ -238,7 +243,7 @@
 			</div>
 
 			<!------Long Picture-->
-			<div class="container mb-3">
+			<div class="container mbtm">
 				<div class="row">
 					<div class="col-12 position-relative">
 						<div class="info-quote">
@@ -252,7 +257,7 @@
 			</div>
 
 			<!--Testimonials-->
-			<div class="container">
+			<div class="container mbtm">
 				<div class="row">
 					<div class="col-12 text-center">
 						<h2 class="title-item"><span>WHAT CLIENTS SAY</span></h2>
@@ -324,5 +329,21 @@
 				</div>
 			</div>
 	</div>
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(this).scrollTop()>10)
+				{
+					$(".header").addClass("fixTop");
+				}
+				else
+				{
+					$(".header").removeClass("fixTop");
+				}
+			});
+		});
+	</script>
 </body>
 </html>
