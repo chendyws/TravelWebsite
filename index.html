@@ -50,7 +50,6 @@
 						<h1>SUARES BALI HOLIDAYS</h1>
 						<p>Suares Bali Holidays is a travel or tourism agency that was founded in 2000. We are providing the best selections of Bali Day Tour & Beyond Packages for a joyful holiday experience in Bali, our professional staffs, drivers and tour guides will lead your trip to explore the beauty of Bali and see closely the uniqueness of our Balinese culture and social tradition. Our team committing to provide high standard services and supported by the experiences that we have in travel agency services to meet our customers need. Customer's satisfaction is our priority and we always make your holiday experience a memory that you will never forget in life.
 						</p>
-						<br>
 					</div>
 				</div>
 			</div>
@@ -246,7 +245,7 @@
 					<div class="col-12 position-relative">
 						<div class="info-quote">
 							<h4>Special Offer - Book Now!</h4>
-							<a href="#" class="btn btn-dark">Contact Us</a>
+							<a href="https://api.whatsapp.com/send?phone=628123966600" class="btn btn-dark">Contact Us</a>
 						</div>
 						<img src="assets/images/longpic.jpg" class="w-100">
 											
@@ -328,26 +327,56 @@
 			</div>
 	</div>
 
+	<div class="box-iklan"></div>
+	
+	<div class="boxwa" style="bottom: -150px;">
+    	<div class="navwa">WhatsApp Chat</div>
+   
+     		<a href="https://api.whatsapp.com/send?phone=628123966600" target="_blank"><img role="Button" src="assets/images/wa-admin-1.jpg" alt="Nomor whatApps Admin 1 Suares Bali Holidays"></a>
+    		<hr>
+    		<a href="https://api.whatsapp.com/send?phone=6282282277700" target="_blank"><img role="Button" src="assets/images/wa-admin-2.jpg" alt="Nomor whatApps Admin 2 Suares Bali Holidays"></a>
+	</div>
+
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/megamenu.js"></script>
 
 	<script>
 		$(document).ready(function(){
+			// Wa
+			
+			var open=false;
+			
+			$('.navwa').click(function()
+				{
+					if(open)
+					{
+						$(this).text('WhatsApp Chat');
+						$('.boxwa').animate({'bottom':'-150px'},500);
+					}
+					else
+					{
+						$(this).text('Tutup Chat');
+						$('.boxwa').animate({'bottom': '2px'},500);
+					}
+				open =!open;
+				});
+			
 			//megamenu
 			$(".megamenu").megamenu();
-
-
-			//FixTop
+			
+			// Fixtop
 			$(window).scroll(function(){
 				if($(this).scrollTop()>10)
-				{
-					$(".header").addClass("fixTop");
-				}
+					{
+						$(".header").addClass("fixTop");
+						$(".box-iklan").fadeIn("fast");
+					}
 				else
-				{
-					$(".header").removeClass("fixTop");
-				}
+					{
+						$(".header").removeClass("fixTop");
+						$(".box-iklan").fadeOut("fast");
+					}
 			});
 		});
 	</script>
