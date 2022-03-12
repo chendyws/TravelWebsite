@@ -15,9 +15,13 @@ body{
 	margin-bottom: 60px;
 }
 
+.logo{
+	display: none;
+}
+
 .logo img{
 	height: 60px;
-	width: 50px;
+	width: 90px;
 }
 
 .header{
