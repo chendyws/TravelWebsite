@@ -177,6 +177,14 @@ body{
 	padding: 30px 50px;
 }
 
+.adventage{
+	padding: 50px;
+	text-align: center;
+	font-size: 22px;
+	background-color: #42d1f5;
+	margin-bottom: 50px;
+}
+
 .footer{
 	background-color:#42d1f5;
 	text-align: center;
