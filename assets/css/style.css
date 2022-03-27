@@ -191,6 +191,7 @@ body{
 	font-family: Calibri, Arial;
 	font-size: 18px;
 	font-weight: 600;
+	padding-bottom: 20px;
 }
 
 .footermenu{
@@ -216,9 +217,7 @@ body{
 	background-color: #81dff7;
 }
 
-.aboutus{
-	text-align: left;
-}
+
 
 .medsos a{
 	font-size: 40px;
@@ -271,6 +270,8 @@ body{
 	margin-left:-100px;
 	display: none;
 }*/
+
+
 
 @media(min-width:768px)
 {
