@@ -49,7 +49,7 @@ Berikut adalah data pengunjung yang mengirimkan pesan:
 	$mail->SMTPSecure = 'ssl';
 
 	$mail->Host = "suaresbaliholidays.com"; //hostname masing-masing provider email
-	$mail->SMTPDebug = 2;
+	$mail->SMTPDebug = 0;
 	$mail->Port = 465;
 	$mail->SMTPAuth = true;
 
@@ -57,14 +57,21 @@ Berikut adalah data pengunjung yang mengirimkan pesan:
 	$mail->SMTPKeepAlive = true; 
 
 	$mail->Username = "admin@suaresbaliholidays.com"; //user email
-	$mail->Password = "XXXXX"; //password email
+	$mail->Password = "XXXXXX"; //password email
 	$mail->SetFrom("admin@suaresbaliholidays.com","Nama pengirim yang muncul"); //set email pengirim
 	$mail->Subject = "Pemberitahuan Email dari Website"; //subyek email
 	$mail->AddAddress("admin@suaresbaliholidays.com","Nama penerima yang muncul"); //tujuan email
+	$mail->AddReplyTo($email,$nama);
 	$mail->MsgHTML($msg);
 
-	if($mail->Send()) echo "Message has been sent";
-	else echo "Failed to sending message";
+	if($mail->Send()) 
+	{
+		header('location:success.html');
+	}
+	else 
+	{
+		header('location:failure.html');
+	}
 
 ?>
 
