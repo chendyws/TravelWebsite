@@ -220,16 +220,19 @@ body{
 
 
 .medsos a{
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .medsos a.fb{color:#0039E9;}
 .medsos a.ig{color:#E90080;}
 .medsos a.tw{color:#00A7E9;}
+.medsos a.star{color:#d0d85c;}
 
 .medsos a.fb:hover{color:#012AAB;}
-.medsos a.ig{color:#E90080;}
-.medsos a.tw{color:#00A7E9;}
+.medsos a.ig:hover{color:#4b022a;}
+.medsos a.tw:hover{color:#045372;}
+.medsos a.star:hover{color:#dde74a;}
+
 
 .boxwa {
     background: #fff;
